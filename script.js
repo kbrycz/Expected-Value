@@ -16,5 +16,15 @@ function calculate(event) {
   }
   document.getElementById("result").innerHTML = result;
   
+}
+
+function reset(event) {
+  console.log("hi");
+  event.preventDefault();
   
+  document.getElementById("result").style.color = "#fff";
+  document.getElementById("result").innerHTML = "0.0";
+  document.getElementById("profit").value = "";
+  document.getElementById("loss").value = "";
+  document.getElementById("otm").value = "";
 }
