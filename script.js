@@ -5,6 +5,7 @@ function calculate(event) {
   let loss = document.getElementById("loss").value;
   let winProb = document.getElementById("otm").value;
   let lossProb = 1 - winProb;
+  profit = profit / 2;
 
   let result = (profit * winProb) - (loss * lossProb);
   result = result.toFixed(2);
